@@ -13,13 +13,16 @@ body {
 
 /* === Navigation === */
 .ps5-nav {
-  background: #111111;
+  background: #000000;
+  border-radius: 100px;
+  border: 1px solid #0070D1;
+  margin: 10px;
   padding: 1rem 2rem;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 100;
-  display: flex;
+  display: flex-start;
   justify-content: center;
 }
 
@@ -64,6 +67,7 @@ body {
   height: 100px;
   background: #353535;
   border-radius: 10px;
+  border: 0.5px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +90,7 @@ body {
   font-size: 2rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
-  position: static;
+  align-items: center;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
