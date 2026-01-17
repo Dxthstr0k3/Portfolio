@@ -8,7 +8,7 @@
 
 body {
   background-color: #000029; /* Dark PS5 vibe */
-  color: #fff;
+  color: #ffffff;
 }
 
 /* === Navigation === */
@@ -45,15 +45,13 @@ body {
 /* === Carousel Styles === */
 .carousel-container {
   position: relative;
-  margin-top: 100px; /* Space for fixed nav */
-  display: flex;
+  margin: 100px 20px 0;
   align-items: center;
   justify-content: center;
 }
 
 .carousel {
   overflow: visible;
-  width: 80%;
 }
 
 .carousel-track {
@@ -69,7 +67,6 @@ body {
   border-radius: 10px;
   border: 0.5px solid white;
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   cursor: pointer;
@@ -86,7 +83,7 @@ body {
 .carousel-btn {
   background: rgba(0, 0, 0, 0.5);
   border: none;
-  color: #fff;
+  color: #ffffff;
   font-size: 2rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
@@ -96,14 +93,28 @@ body {
   z-index: 10;
 }
 
-.carousel-btn.left {
-  left: -50px;
+.item-preview {
+  width: 50%;
+  height: 200px;
+  background: #000000;
+  border-radius: 5px;
+  border: 0.5px solid rgb(0, 119, 255);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 40px;
+  font-size: 1.2rem;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
-.carousel-btn.right {
-  right: -50px;
+.item-preview:hover,
+.item-preview.active {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #0070D1;
 }
 
-.carousel-btn:hover {
-  background: #0070D1;
-}
+@media (min-width: 600px) {
+  .ps5-nav {grid-area: 1 / span 6;}
+  .carousel-item {grid-area: 2 / span 1;}
+  .item-preview {grid-area: 2 / span 4;}
