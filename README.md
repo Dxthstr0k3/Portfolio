@@ -1,2 +1,2 @@
-# Portfolio
-My personal web development portfolio showcasing projects built with HTML, CSS, and JavaScript. Designed to demonstrate my skills, creativity, and growth as a developer.
+# PSX User Interface
+PSX User Interface is a PlayStation-inspired console UI built for the web using HTML, CSS, and JavaScript. This project explores modern UI design, animations, and interactive navigation in a clean, scalable front-end architecture.
