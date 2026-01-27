@@ -36,6 +36,7 @@ header {
   left: 0;
   padding: 4rem 12%;
   background: rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -234,15 +235,20 @@ section {
 
 /*Scorllbar*/
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
+  border-radius: 50px;
 }
 
 ::-webkit-scrollbar-track {
   background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: black;
 }
 
 /*Services Section*/
