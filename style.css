@@ -17,9 +17,9 @@ html {
 }
 :root {
   --bg-color: #080808;
-  --second-bg-color: #001005;
+  --second-bg-color: #0f0f0f;
   --text-color: white;
-  --main-color: #00ff51;
+  --main-color: #00e676;
 }
 
 /*Body*/
@@ -547,7 +547,7 @@ section.show {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.699);
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10000;
